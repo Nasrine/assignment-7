@@ -1,8 +1,4 @@
-@-moz-viewport {width: device-width; scale: 1; }
-@-ms-viewport {width: device-width; scale: 1; }
-@-o-viewport {width: device-width; scale: 1; }
-@-webkit-viewport {width: device-width; scale: 1; }
-@-viewport {width: device-width; scale: 1; }
+
 
 *, *::before, *::after{ 
 	box-sizing: inherit;
@@ -11,58 +7,58 @@ body{
 	font-family: 'Dosis', sans-serif;
 }
 .masthead{
-	background-image: url("../images/logo.svg"), url("../images/masthead.png");
-	background-size: 75px auto, 200px auto;
+	background-image:url("../images/logo.svg"),url("../images/logo.svg"),url("../images/masthead.png");
+	background-repeat: no-repeat,no-repeat, repeat;
+	background-size: 75px auto,75px auto,200px auto;
 	padding: 0.25em;
-	background-repeat: no-repeat, repeat;
-	background-position: left top;
+	background-position: left top, right top, left top;
 }
 h1{
 	color: #512200;
 	text-align: center;
-	padding: center;
 	position: center;
 }
-.image{
-	position: relative;
+img{
 	width:100%;
 	display: block;
 } 
 h2{
 	position: absolute;
-	bottom: -11px;
+	bottom:0;
 	width: 100%;
 	color: white;
 	font-weight: bold;
 	text-align: center;
-	background-image: linear linear-gradient(to bottom, transparent, rgba(0,0,0,0.5));
+	background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.5));
 	padding: 1em;
+	margin: 0;
 
 }
 
 .stone{
-	linear-gradient: bottom #000000;
-	width: 100%;
+	position: relative;
 }
 
-#bee{
-	position:absolute;
-	display:;
+.bug{
+	position:relative;
+	float: left;
+	width: 50%;
 	padding:center;
-	text-decoration: none;
-	border-radius: 12px;
+	
+}
+.bee{
+	position: absolute;
+	bottom: 1em;
+	background-image:linear-gradient(to bottom, #2E9618, #006633);
+	border-radius: 10px;
+	padding: 0.5em;
 	color: #fff;
 	background-color: #2E9618;
-	background-image:linear-gradient(to bottom, #2E9618, #006633);
+	text-decoration: none;
+	left:50%;
+	transform:translateX(-50%);
 }
 
-.masthead{
-	background-image:url("../images/logo.svg"),url("../images/logo.svg");
-	background-repeat: no-repeat,no-repeat, repeat;
-	background-size: 75px auto, 75px auto, 200 px auto;
-	background-position: left top, right top
-					center10 px;
-}
 nav{
 	background-color: #512200;
 	opacity: 0.5;
@@ -81,7 +77,7 @@ nav a{
 	color: #fff;
 	background-color:#512200;
 	padding: 0.75em 0.75em;
-	font-style:
+	font-style:Dosis;
 }
 footer{
 	background-color: #512200;
