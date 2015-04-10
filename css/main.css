@@ -28,9 +28,9 @@ h2{
 	width: 100%;
 	color: white;
 	font-weight: bold;
-	text-align: center;
-	background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.5));
-	padding: 1em;
+	text-align:center;
+	background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.05));
+	padding: 0.5em;
 	margin: 0;
 
 }
@@ -82,10 +82,20 @@ nav a{
 footer{
 	background-color: #512200;
 	opacity: 0.5;
-	padding: 0.25em;
+	padding: 0;
+	position: absolute;
+	bottom: 1em;
+	float: right;
 }
-.footer{
-	position: relative;
-	width: 10%;
-	left: 45%
+
+.wrapper {
+	background-color:#512200;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	height: 60px;
+	overflow: hidden;
+	background-image:url("../images/logo.svg");
+	background-repeat: no-repeat;
+	background-position: 
 }
