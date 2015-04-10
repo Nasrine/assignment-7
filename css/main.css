@@ -46,6 +46,11 @@ h2{
 	padding:center;
 	
 }
+
+#bee {
+	overflow: hidden;
+}
+
 .bee{
 	position: absolute;
 	bottom: 1em;
@@ -79,20 +84,13 @@ nav a{
 	padding: 0.75em 0.75em;
 	font-style:Dosis;
 }
-footer{
-	background-color: #512200;
-	opacity: 0.5;
-	padding: 0;
-	position: absolute;
-	bottom: 1em;
-	float: right;
-}
+
 
 .wrapper {
-	background-color:#512200;
-	position: absolute;
+	background-color:#90815f;
+	xposition: absolute;
 	width: 100%;
-	bottom: 0;
+	xbottom: 0;
 	height: 60px;
 	overflow: hidden;
 	background-image:url("../images/logo.svg");
